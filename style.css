@@ -557,6 +557,7 @@ footer {
 
     #blog article {
         width: auto;
+        max-width: 50ch;
         margin: 0 1rem;
     }
 }
@@ -572,13 +573,9 @@ footer {
     .about-container {
         margin-top: 2rem;
     }
-
+    
     main #about img {
         max-height: 60vh;
-    }
-
-    #blog .blog-container {
-        margin-top: 2rem;
     }
 
     main #gallery .gallery-container {
@@ -592,6 +589,10 @@ footer {
     main #gallery .images img {
         height: 63vh;
         width: auto;
+    }
+
+    #blog .blog-container {
+        margin-top: 2rem;
     }
 }
 
