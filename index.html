@@ -15,18 +15,37 @@
     <link href="./assets/font-awesome/css/solid.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrollbar.css">
+
 </head>
 
 <body>
-    <header>
+    <nav id="main-navbar">
+        <div id="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 
         <div id="theme-switcher" class="theme-switcher">
             <span class="toggle-text">Light Mode</span>
             <i class="fas fa-sun"></i>
         </div>
 
-        <div class="hero">
+        <div id="navigation">
+            <ul>
+                <li><a href="#top" onClick="hideMenu()">Home</a></li>
+                <li><a href="#about" onClick="hideMenu()">About</a></li>
+                <li><a href="#gallery" onClick="hideMenu()">Gallery</a></li>
+                <li><a href="#blog" onClick="hideMenu()">Blog</a></li>
+                <li><a href="#contact" onClick="hideMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
+
+    <header id="home">
+        <div>
             <h1>Typographix</h1>
 
             <div class="social-media-icons">
@@ -36,20 +55,18 @@
                 <i class="fa-brands fa-youtube" title="YouTube"></i>
                 <i class="fa-brands fa-github" title="GitHub"></i>
             </div>
-
         </div>
-
     </header>
 
     <main>
-        <section class="big-image">
-            <div class="big-image-container">
-                <h2>Cutting Edge Image & Text Geneartion</h2>
+        <section id="about">
+            <div class="about-container">
+                <h2>Cutting Edge Image & Text Generation</h2>
                 <img src="./assets/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" alt="Retro Gaming Setup">
             </div>
         </section>
 
-        <section class="gallery">
+        <section id="gallery">
 
             <div class="gallery-container">
 
@@ -62,7 +79,7 @@
             </div>
         </section>
 
-        <section class="blog">
+        <section id="blog">
             <div class="blog-container">
                 <h2>Blog Updates (Coming Soon)</h2>
 
@@ -85,7 +102,7 @@
         </section>
     </main>
     <footer>
-        <section class="contact">
+        <section id="contact">
             <a href="mailto:blu-emli-arts@gmx.de">Contact Us</a>
         </section>
         <small class="copyright">

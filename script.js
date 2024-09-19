@@ -44,3 +44,19 @@ if (currentTheme) {
 }
 
 // #endregion themeSwitcher 
+
+
+// #region navigation
+const nav = document.getElementById('navigation');
+const menuIcon = document.getElementById('menu-icon');
+
+function toggleMenu() {
+  menuIcon.classList.toggle("active");
+  nav.classList.toggle("active");
+} 
+
+function hideMenu() {
+    menuIcon.classList.remove("active");
+    nav.classList.remove("active");
+}
+// #endregion navigation
